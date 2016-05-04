@@ -124,3 +124,8 @@ function createImg(datatosend, callback) { // using fileAPI
         fr.readAsDataURL(file);
     }
 }
+
+
+$(document).ready(function(){
+    $(".slider").bxSlider();
+});
