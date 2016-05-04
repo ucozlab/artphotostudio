@@ -182,3 +182,6 @@ fieldset {
 
 canvas {
   max-width: 100%; }
+
+.test {
+  color: red; }
