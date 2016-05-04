@@ -1,0 +1,28 @@
+{
+  "name": "artphotostudio",
+  "version": "1.0.0",
+  "description": "Olga Shevchenko site",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-sass": "^2.3.1"
+  },
+  "scripts": {
+    "test": "test_commandos"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ucozlab/artphotostudio.git"
+  },
+  "keywords": [
+    "art",
+    "photo",
+    "studio"
+  ],
+  "author": "Artem UCOZLAB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ucozlab/artphotostudio/issues"
+  },
+  "homepage": "https://github.com/ucozlab/artphotostudio#readme"
+}

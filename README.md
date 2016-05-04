@@ -1,2 +1,2 @@
 # artphotostudio
-artphotostudio.ck.ua Ольги Шевченко
+artphotostudio.ck.ua Сайт Ольги Шевченко
