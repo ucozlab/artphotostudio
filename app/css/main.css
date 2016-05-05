@@ -1,9 +1,24 @@
-.test {
-  color: red; }
-
 html,
 body {
   height: 100%; }
+
+.copyright {
+  background: #0f111a;
+  color: #dbdbdb;
+  line-height: 40px; }
+
+#page {
+  min-height: 100%;
+  margin-bottom: -40px;
+  padding-bottom: 40px; }
+
+#footer {
+  height: 40px;
+  position: relative;
+  z-index: 10; }
+
+#main {
+  padding-bottom: 40px; }
 
 .margin30 {
   margin: 30px 0; }
@@ -36,24 +51,6 @@ h2 {
   background: #ffffff;
   padding: 15px;
   margin-bottom: 20px; }
-
-.copyright {
-  background: #0f111a;
-  color: #dbdbdb;
-  line-height: 40px; }
-
-#page {
-  min-height: 100%;
-  margin-bottom: -40px;
-  padding-bottom: 40px; }
-
-#footer {
-  height: 40px;
-  position: relative;
-  z-index: 10; }
-
-#main {
-  padding-bottom: 40px; }
 
 .button i {
   vertical-align: middle;
