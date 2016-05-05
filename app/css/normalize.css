@@ -31,6 +31,8 @@ legend {padding: 0;border: 0;}
 pre{overflow:auto}
 code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
 
+/*dev*/
+
 input,button,textarea {outline:none;}
 input{line-height:normal}
 input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
