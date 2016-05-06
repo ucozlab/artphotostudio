@@ -43,6 +43,7 @@ $gray_light: #dbdbdb;
 $gray_lighter: #f7f7f7;
 
 $font-open-sans: 'Open Sans', Arial, sans-serif;
+$font-awesome: FontAwesome;
 $base-font-size:13px;
 $base-line-height:24px;
 $base-font-weight:400;
@@ -96,25 +97,29 @@ input[type=submit]:active, input[type=submit]:focus, .button:active, .button:foc
 .additional{color:#757575;}
 .normal{font-style:normal;font-weight: normal;font-size:inherit;line-height:inherit;}
 
+
 body{border:0;background-color: $white;color:$black;font-family: 'Open Sans', Arial, sans-serif;font-size:13px;line-height: 24px;}
 a{text-decoration:none;color:$red_dark;
- &:hover {color: $red_dark;outline: 0;}
- &:active,:focus {color: $red;}
+ &:hover {color: $red;outline: 0;}
+ &:active, &:focus, &:visited {color: $red_dark;}
 }
 a, input, .button{-webkit-transition: all 0.3s ease;transition: all 0.3s ease;-moz-transition: all 0.3s ease;-o-transition: all 0.3s ease;}
 p {font:$font-open-sans; font-size:$base-font-size; line-height: $base-line-height; font-weight: $base-font-weight; }
 .col-md-3, .col-md-4, .col-lg-3, .col-lg-4 {
  p { font:$font-open-sans; font-size:$base-font-size; line-height: $base-line-height - 12,5%; font-weight: $base-font-weight; }
 }
-ul {font: $base-font-size; line-height: $base-line-height + 33,33%; font-weight: $base-font-weight; list-style-type: none;
- li {line-height: $base-line-height;
-  :before {
-   color: $red;
-   content: "¶ ";
-   padding-right: 15px;
-  }
- }
+ul {font: $base-font-size; line-height: $base-line-height + 33,33%; font-weight: $base-font-weight; list-style: none;
+ li {line-height: $base-line-height; padding-left: 30px;
+  &:before { color: $red; content: "\f111"; padding-right: 15px; font-family: $font-awesome; font-size: 5px; display: inline-block; } } }
+ol {font: $base-font-size; line-height: $base-line-height + 33,33%; font-weight: $base-font-weight; list-style: none;
+ li {line-height: $base-line-height; padding-left: 30px;list-style-type: none; counter-increment: list;
+  &:before { color: $red; content: counter(list); padding-right: 15px; display: inline-block;  } } }
+table {
+ thead { border-bottom: 2px solid $red;}
+ tr { td,th {padding: 17px 30px 17px 0; } td {border-bottom: 2px solid $gray_light;}}
 }
+
+
 
 /*a:visited{color:#376f2d;}*/
 h1, .h1{font-size:32px;font-weight:400;line-height: 48px;font-family: 'Open Sans', Arial, sans-serif;}
