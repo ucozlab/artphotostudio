@@ -127,5 +127,11 @@ function createImg(datatosend, callback) { // using fileAPI
 
 
 $(document).ready(function(){
-    $(".slider").bxSlider();
+    $(".slider").bxSlider( {
+        pager: true,
+        pagerType: 'short',
+        pagerCustom: '#pager',
+        nextSelector: '#slider-next',
+        prevSelector: '#slider-prev'
+    });
 });

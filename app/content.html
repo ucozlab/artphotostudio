@@ -149,14 +149,14 @@
           </tfoot>
           <tbody>
           <tr>
-            <td>Table Cell 1 Большинству девушек свойственна любовь к фотографированию и позированию – это, конечно, не новость. </td>
+            <td>Table Cell 1 Большинству девушек свойственна любовь к<br> фотографированию и позированию – это, конечно, не новость. </td>
             <td>Table Cell 2</td>
             <td>Table Cell 3</td>
             <td>Table Cell 4</td>
             <td>Table Cell 5</td>
           </tr>
           <tr>
-            <td>Table Cell 1 Большинству девушек свойственна любовь к фотографированию и позированию – это, конечно, не новость. </td>
+            <td>Table Cell 1 Большинству девушек свойственна любовь к<br> фотографированию и позированию – это, конечно, не новость. </td>
             <td>Table Cell 2</td>
             <td>Table Cell 3</td>
             <td>Table Cell 4</td>
@@ -212,7 +212,7 @@
           <p>Subscript for things like H<sub>2</sub>O.</p>
           <p><small>This small text is small for for fine print, etc.</small></p>
           <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
-          <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q></p>
+          <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">Большинству девушек свойственна любовь к фотографированию и позированию – это, конечно, не новость. <br>Также понятно, что современные технологии сделали обычные фотографии с привычным форматом довольно скучными и непримечательными.<br> Мы же предлагаем вам современную фотосессию девушки в студии, которая производится с использованием профессионального </q></p>
           <p><cite>This is a citation.</cite></p>
           <p>The <dfn>dfn element</dfn> indicates a definition.</p>
           <p>The <mark>mark element</mark> indicates a highlight.</p>
@@ -330,6 +330,16 @@
                 <option>Option Three</option>
               </optgroup>
             </select>
+            <label for="select">Select-styled</label>
+            <span class="select-styled">
+                <select id="select2">
+                  <optgroup label="Option Group">
+                      <option>Option One</option>
+                      <option>Option Two</option>
+                      <option>Option Three</option>
+                  </optgroup>
+                </select>
+            </span>
           </p>
         </fieldset>
         <p><a href="#top">[Top]</a></p>
@@ -409,6 +419,16 @@
             <button type="reset">&lt;button type=reset&gt;</button>
             <button type="button" disabled>&lt;button disabled&gt;</button>
           </p>
+            <p>
+                <input type="submit" class="button-large" value="<input type=submit>">
+                <input type="button" class="button-large" value="<input type=button>">
+                <input type="reset" class="button-large" value="<input type=reset>">
+            </p>
+            <p>
+                <input type="submit" class="button-s1" value="<input type=submit>">
+                <input type="button" class="button-s1" value="<input type=button>">
+                <input type="reset" class="button-s1" value="<input type=reset>">
+            </p>
         </fieldset>
         <p><a href="#top">[Top]</a></p>
       </form>
