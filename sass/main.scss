@@ -32,21 +32,22 @@ body {  height: 100%; }
 
 #mainslider {
   max-width: $max-width!important; margin: 0 auto; position: relative;
+  .slider-describtion { background: rgba( 255, 255, 255, 0.7); padding: 20px 20px 0 20px; overflow: hidden; position: absolute; right: 0; bottom: 0; height: 187px; max-width: 300px; z-index: 20;
+    .table { height: 46%;} }
   .bx-wrapper {
     .slider {
       li { padding: 0;
         &:before { content: ""; } } } }
-  .outside-controls { position: absolute; bottom: 0; right: 0; padding: 0; background: rgba( 255, 255, 255, 0.7);
+  .outside-controls { position: absolute; bottom: 187px; right: 0; padding: 0; background: rgba( 255, 255, 255, 0.7); width: 300px; z-index: 10;
     #pager { @include font-size(18px);; font-weight: bold;}
-    .controls-header { background: rgba( 255, 255, 255, 0.9);  padding: 22px 12px 0 12px;
+    .controls-header { background: rgba( 255, 255, 255, 0.9);  padding: 22px 12px 0 12px; overflow: hidden;
       .bx-prev, .bx-next {@include transition (all 0.3s ease); outline: 0; width: 45px; height: 45px; line-height: 44px; margin: -4px 0 0 0; display: inline-block; font-size: 0; z-index: 500; border: none;
         &:hover { &:after{ color: $color_red } } }
       .bx-next:after, .bx-prev:after{ color:$color_black; display: inline-block;font: normal normal normal 14px/1 FontAwesome;font-size: 32px;text-rendering: auto;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
       .bx-prev:after{content: "\f104";}
       .bx-next:after{content: "\f105";}
       a.disabled {display: none;} }
-    .slider-describtion { padding: 20px 20px 0 20px; height: 103px; }
-    .slider-button { padding: 0 15px 15px 15px; }
+    .slider-button { padding: 0 15px 15px 15px;overflow: hidden; }
   }
 }
 
